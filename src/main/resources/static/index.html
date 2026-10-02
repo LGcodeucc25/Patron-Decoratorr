@@ -59,6 +59,21 @@
         </p>
     </section>
 
+    <section class="intro" aria-label="Pass choices">
+        <div>
+            <label for="passType">Pass type</label>
+            <select id="passType">
+                <option value="standard">Standard</option>
+                <option value="student">Student</option>
+            </select>
+        </div>
+        <div>
+            <p>Start with a preset, then customize your experiences.</p>
+            <div id="presetButtons" aria-label="Pass presets"></div>
+            <p id="presetMessage" role="status"></p>
+        </div>
+    </section>
+
     <section class="services" id="services">
 
         <article class="service-card">
@@ -136,15 +151,15 @@
             </div>
 
             <div class="pass-title">
-                <span>General Admission</span>
-                <strong id="totalPrice">$15.00</strong>
+                <span id="passDescription">Museum Pass</span>
+                <strong id="totalPrice">Loading...</strong>
             </div>
 
             <div class="pass-services" id="serviceList"></div>
 
             <div class="pass-line"></div>
 
-            <button class="activate" id="activateButton">
+            <button class="activate" id="activateButton" disabled>
                 Activate my pass <span>↗</span>
             </button>
 
@@ -152,7 +167,7 @@
                 Clear selection
             </button>
 
-            <div class="message" id="message"></div>
+            <div class="message" id="message" role="status"></div>
         </div>
     </section>
 
